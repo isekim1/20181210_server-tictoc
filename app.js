@@ -27,7 +27,7 @@ function connectDB() {
   mongodb.connect(databaseUrl, function(err, database) {
     if (err) throw err;
     console.log('DB 연결 완료! : ' + databaseUrl);
-    app.set('database', database.db('testdb'));
+    app.set('database', database.db('tictactoe1210'));
   });
 }
 connectDB();
